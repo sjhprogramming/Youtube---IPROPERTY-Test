@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace YET_Testing_IProperty_Winforms_via_Class
 {
@@ -12,16 +7,16 @@ namespace YET_Testing_IProperty_Winforms_via_Class
 
         private string _textToChange;
 
-        public string TextToChange 
+        public string TextToChange
         {
             get { return _textToChange; }
-            set 
-            { 
+            set
+            {
                 if (value == TextToChange) return;         // Don't update as the value has stayed the same!
                 _textToChange = value;
                 OnPropertyChanged(TextToChange);
             }
-        
+
         }
 
         #region Property Events Handler etc

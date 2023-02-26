@@ -45,7 +45,7 @@ namespace YET_Testing_IProperty_Winforms_via_Class
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         /// <summary>
