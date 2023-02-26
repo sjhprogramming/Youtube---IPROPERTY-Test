@@ -25,5 +25,10 @@ namespace YET_Testing_IProperty_Winforms_via_Class
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(_myclass.TextToChange);
+        }
     }
 }

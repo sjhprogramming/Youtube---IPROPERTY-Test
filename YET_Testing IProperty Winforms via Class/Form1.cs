@@ -23,7 +23,7 @@ namespace YET_Testing_IProperty_Winforms_via_Class
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            newform.Show();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,9 +36,6 @@ namespace YET_Testing_IProperty_Winforms_via_Class
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(_class1.TextToChange);
-        }
+        private void button2_Click(object sender, EventArgs e) => MessageBox.Show(_class1.TextToChange);
     }
 }
