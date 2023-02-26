@@ -9,6 +9,13 @@ namespace YET_Testing_IProperty_Winforms_via_Class
         {
             InitializeComponent();
 
+            #region Form Size
+            //Stop the user from playing with the form sizing......
+            this.MaximumSize = new System.Drawing.Size(661, 333);
+            this.MinimumSize = new System.Drawing.Size(661, 333);
+            #endregion
+
+
             TextBoxText.DataBindings.Add("Text", _class1, "TextToChange", true, DataSourceUpdateMode.OnPropertyChanged);
             LblTextChange.DataBindings.Add("Text", TextBoxText, "Text", true, DataSourceUpdateMode.OnPropertyChanged);
             this.DataBindings.Add("Text", _class1, "TextToChange", true, DataSourceUpdateMode.OnPropertyChanged);

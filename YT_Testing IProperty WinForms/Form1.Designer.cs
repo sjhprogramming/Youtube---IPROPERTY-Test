@@ -92,6 +92,8 @@
             Controls.Add(TextBoxText);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            MaximumSize = new Size(661, 333);
+            MinimumSize = new Size(661, 333);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Steve Houldey - Demo IProperty";
