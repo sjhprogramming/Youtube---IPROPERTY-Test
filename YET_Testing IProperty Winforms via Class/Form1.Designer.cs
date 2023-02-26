@@ -33,6 +33,7 @@
             TextBoxText = new TextBox();
             menuStrip1 = new MenuStrip();
             exitToolStripMenuItem = new ToolStripMenuItem();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -81,11 +82,22 @@
             exitToolStripMenuItem.Text = "E&xit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(407, 236);
+            button1.Name = "button1";
+            button1.Size = new Size(172, 36);
+            button1.TabIndex = 8;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(648, 293);
+            Controls.Add(button1);
             Controls.Add(LblTitle);
             Controls.Add(LblTextChange);
             Controls.Add(TextBoxText);
@@ -93,6 +105,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -106,5 +119,6 @@
         private TextBox TextBoxText;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private Button button1;
     }
 }

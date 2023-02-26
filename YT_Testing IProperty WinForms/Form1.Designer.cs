@@ -43,7 +43,6 @@
             TextBoxText.Name = "TextBoxText";
             TextBoxText.Size = new Size(375, 33);
             TextBoxText.TabIndex = 0;
-            
             // 
             // LblTextChange
             // 
@@ -96,6 +95,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Steve Houldey - Demo IProperty";
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
