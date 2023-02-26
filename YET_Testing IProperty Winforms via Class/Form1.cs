@@ -3,6 +3,7 @@ namespace YET_Testing_IProperty_Winforms_via_Class
     public partial class Form1 : Form
     {
         private Class1 _class1 = new();
+        Form2 newform = new Form2();
 
         public Form1()
         {
@@ -22,7 +23,7 @@ namespace YET_Testing_IProperty_Winforms_via_Class
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            newform.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
