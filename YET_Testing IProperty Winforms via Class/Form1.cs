@@ -9,7 +9,7 @@ namespace YET_Testing_IProperty_Winforms_via_Class
             InitializeComponent();
 
             TextBoxText.DataBindings.Add("Text", _class1, "TextToChange", true, DataSourceUpdateMode.OnPropertyChanged);
-            LblTextChange.DataBindings.Add("Text", _class1, "TextToChange", true, DataSourceUpdateMode.OnPropertyChanged);
+            LblTextChange.DataBindings.Add("Text", TextBoxText, "Text", true, DataSourceUpdateMode.OnPropertyChanged);
 
 
         }
@@ -27,9 +27,16 @@ namespace YET_Testing_IProperty_Winforms_via_Class
         private void button1_Click(object sender, EventArgs e)
         {
             _class1.TextToChange = "Hello";
-            
+            this.Text = _class1.TextToChange;
+            TextBoxText.Text = _class1.TextToChange;
 
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(_class1.TextToChange);
         }
     }
 }
